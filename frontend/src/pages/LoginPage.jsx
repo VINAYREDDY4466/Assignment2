@@ -10,7 +10,7 @@ const LoginPage = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', {
+            const res = await axios.post('https://assignment2-ldwb.onrender.com', {
                 email,
                 password,
             });
@@ -23,7 +23,7 @@ const LoginPage = () => {
 
     const handleRegister = async () => {
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/register', {
+            const res = await axios.post('https://assignment2-ldwb.onrender.com', {
                 email,
                 password,
             });
